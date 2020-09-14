@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* menu*/
+nav{
+    background-color:black;
+    width: 100%;
+    height: 50px;
+    box-sizing: 0 2px 2px 0;
+    
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   font-size: 20px;
+}
+
+ul.menu
+{
+    list-style-type: none;
+    margin:0;
+    padding:5px 15px;
+    display:flex;
+ }
+.menu>li{
+    min-width:150px;
+   
+}
+.menu>li>a{
+    text-decoration:none;
+    padding:10px 15px;
+    font-size:19px;
+    color:white;
+    display:block;
+}
+.menu>li>a:hover{
+    background-color: red;
+}
+.subcontent
+{
+    display:none !important;
+    position: absolute;
+    background-color:black;
+    border: 2px solid red;
+    z-index:2;
+    
+    
+}
+.subcontent>li>a{
+    border-radius: 2px solid red;
+    
+}
+.submenu:hover .subcontent{
+    display:block !important;
+}
+
+
+/* menu trang con */
+ul.menucon{
+    display:flex;
+    background-color: azure;
+    padding: 10px 15px;
+    list-style-type: none;
+    margin-top: 3%;
+}
+
+ul.menucon>li{
+    padding: 10px;
+    min-width: 200px;
+    border-right: 1px solid red;
+    
+}
+
+ul.menucon>li>a{
+    text-decoration: none;
+}
+
+/* hinh nen*/
+div.hinhnen{
+    margin-bottom: 0%;
+}
+/* selection */
+h2.danhmuc{
+    font-size: 30px;
+    text-align: center;
+    border:2px solid red ;
+    border-radius: 20px;
+    display:inline-block;
+    margin-left: 1%;
+}
+section{
+    display: flex;
+}
+/* ben trai*/
+div.left{
+    width: 35%;
+    
+}
+div.leftsp>ul>li{
+    list-style-type: none;
+}
+div.leftsp>ul>li>a{
+    text-decoration: none;
+}
+
+div.hinhtrai{
+    display: flex;
+}
+div.hinhtrai>img{
+    width: 25%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+div.hinhtrai>h2{
+    width: 20%;
+}
+div.hinhtrai input[type="submit"]{
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border-right: 2px dashed red;
+    border-left: 2px dashed lightblue;
+    border-top: 2px dashed palevioletred;
+    border-bottom: 2px dashed rgb(146, 160, 115);
+    margin-left: 24%;
+    display: inline-block;
+}
+div.left>h2{
+    margin-bottom: 0%;
+}
+
+/* ben phai*/
+div.right{
+    width: 65%;
+}
+@keyframes doimauchu{
+    0%{
+        background-color:  lightpink;
+    }
+    25%{
+        background-color: lightslategrey;
+    }
+    50%{
+        background-color: lightsteelblue;
+    }
+    75%{
+        background-color: lightskyblue;
+    }
+    
+}
+h1.subject{
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px 10px 0 0;
+    background-color:#C0C0C0;
+    color: lightsalmon;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    animation: doimauchu 5s infinite;
+    }
+div.info{
+    text-align: center;
+    font-size: 15px;
+    background:linear-gradient(lightblue,blue);
+}
+div.info>h3{
+    background-color: lightpink;
+}
+div.hinhsp{
+    display: flex;
+}
+div.hinhsp1{
+    width: 25%;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1%;
+    
+}
+div.hinhsp1>img{
+    width: 100%;
+}
+
+div.hinhsp1>input{
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border-right: 2px dashed red;
+    border-left: 2px dashed lightblue;
+    border-top: 2px dashed palevioletred;
+    border-bottom: 2px dashed rgb(146, 160, 115);
+    margin-left: 24%;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*Footer css*/
+footer{
+    background-color: black;
+    color:white;
+    padding-top:15px;
+    width:100%;
+    display:inline-block;
+    padding-bottom: 45px;
+    
+    
+}
+.ft25
+{
+    width:30%;
+    float:left;
+    margin-left:20px;
+    margin-right:10px;
+}
+.line-footer
+{
+    background:white;
+    width:100%;
+    height:1px;
+    margin-bottom:15px;
+    display:inline-block;
+}
+.content-footer-ft25>li>a
+{
+    line-height:50px;
+    text-transform: capitalize;
+    border-bottom:1px solid #527990;
+    padding:0 10px;
+    font-weight:300;
+    color:white;
+    display:block;
+    text-decoration:none;
+    
+}
+.title-footer
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top:20px;
+    margin-left:20px;
+   
+}
+.bottom-footer
+{
+    text-align:center;
+    background-color:black;
+    color:gray;
+    margin-top:0;
+   
+    
+}

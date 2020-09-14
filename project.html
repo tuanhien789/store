@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="#">
+    <title >My toy store</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/project.css" rel="stylesheet"/>
+    <script src="jquery/jquery.txt"></script>
+    <script src="JS/main.js"></script>
+    <link href="images/logo.jpg" rel="shortcut icon"/>
+   <!-- <script type="text/javascript">
+        $(document).ready(function() {
+            $("#Gototopimg").hide()         //Ẩn Davinci    
+            $(window).scroll(function() {   //Cho Davinci xuất hiện khi trượt xuống
+              var t = $(this).scrollTop()
+              if (t >= 200)
+                  $("#Gototopimg").show(500)
+              else
+                  $("#Gototopimg").hide(500)
+            })
+            $("#Gototop").click(function(){   //Bấm vào Davinci sẽ quay về đầu trang
+              $('html, body').animate({
+                  'scrollTop': "0"
+              }, 500)
+            })
+        });
+        
+    </script>-->
+</head>
+
+
+<body  style=" background-image: url(images/download.jpg)">
+    <a href="javascript:;" id="Gototop" onclick="gotoTop()"><img src="images/yi up.png" alt="Gototop" id="Gototopimg" width="15%"/></a>
+    <header class="header " id="myheader" style=" background-image: url(images/download.jpg)">
+        <div class="logo  "> 
+            <h1>Toys-kingdom</h1>
+        </div>
+    <div class="container-search-menu">
+        <div class=" search col25 " >
+            <input width="100%" type="text"   placeholder="Tìm kiếm sản phẩm...">
+            <button type="submit" value="search"><i class="fa fa-search"></i></button>
+        </div>
+        <div>
+            <ul class="icon">
+            <li class="facebook make"><a  href="#" target="_blank" rel="noopener" title="no title"><i class="fa fa-facebook "></i></a></li>
+            <li class="youtube make"><a   href="#"><i class="fa fa-youtube"></i></a></li>
+            <li class="twitter make"><a   href="#" target="_blank"rel="noopener" title="toykingdom net"><i class="fa fa-twitter"></i></a></li>
+            <li class="instagram make"><a target="_blank"  href="#" title="no title"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        
+        </div>
+    </div>
+    </header> 
+    <nav>
+        <ul class="menu">
+            <li ><a href="project.html">Trang chủ</a></li>
+            <li class="submenu" >
+                <a href="project.html">Sản phẩm</a>
+                <ul class="menu subcontent" >
+                    <li><a href="indexhot.html">Hot Toys</a></li>
+                    <li><a href="indexfun.html">Funko</a></li>
+                    <li><a href="indexhero.html">Herocross</a></li>
+                    <li><a href="indexbeast.html">Beast Kingdom</a></li>
+                    <li><a href="indexdevil.html">Devil Toys</a></li>
+                    <li><a href="indexcos.HTML">XM Studio</a></li>
+                    <li><a href="indexcos.HTML">Royal Selangor</a></li>
+                </ul>
+            </li>
+            <li ><a href="indexsukien.html">Sự kiện</a></li>
+            <li ><a href="indexgt.html">Giới thiệu</a></li>
+            <li ><a href="indexlh.html">Liên hệ</a></li>
+            <li > 
+                <button id="cart">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    Giỏ Hàng
+                </button>
+            </li>
+             <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order"><a href="thanhtoan.html">Thanh Toán</a></button>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        
+    </nav>
+
+        <div class="slideshow">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="3000">
+                    <img src="images/slideshow_2.png.jpg" class="d-block w-100" alt="1">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="images/slideshow_3.png.jpg" class="d-block w-100" alt="2">
+                  </div>
+                  <div class="carousel-item" data-interval="3000">
+                    <img src="images/slideshow_4.png.jpg" class="d-block w-100" alt="3">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+         </div>
+         </div>
+         
+         <div class="midle">
+             
+             <h1>-KHUYẾN MÃI BLACK FRIDAY-</h1>
+             <div class="banner_width40">
+                 <div class="banner_text_center">
+                 <h2 class="banner_title">Giảm 30% sản phẩm nổi bật</h2>
+                </div> 
+            </div>
+             <img src="images/sale.jpg" alt="sale"/>
+            
+         </div>
+        <section>
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner brand" >
+                <div class="slider-box">
+                    <div class="owl">
+              <div class="carousel-item active second" ><div class="hinhchay">
+                <img class="d-block w-100" src="images/brand1.webp" alt="First slide">
+                 <img class="d-block w-100" src="images/brand2.jpg" alt="Second slide">
+                 <img class="d-block w-100" src="images/brand3.jpg" alt="Third slide">
+                  <img class="d-block w-100" src="images/brand4.jpg" alt="Third slide">
+              </div>
+              </div>
+              <div class="carousel-item second">
+                <div class="hinhchay">
+               <img class="d-block w-100" src="images/brand5.jpg" alt="Third slide">
+               <img class="d-block w-100" src="images/brand6.jpg" alt="Third slide">
+                <img class="d-block w-100" src="images/brand7.jpg" alt="Third slide">
+                 <img class="d-block w-100" src="images/brand8.jpg" alt="Third slide">
+                </div>
+              </div>
+              
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            </div>
+        </div>
+    </div>
+            </section>
+          </div>
+    
+    <section>
+        <div class="content" > 
+            <h1>Sản phẩm bán chạy </h1>
+            <p>Những sản phẩm được ưu chuộng </p>
+        </div>
+        <div class="products ">
+            <div class="product">
+                <img class="img-prd" src="images/overwatch.webp" alt="anh"/>
+                <hr color="red" size="1px" width="100%">
+                <div class="info">
+                    <h3 class="content-product-h3">Pop Games: Overwatch S5 - Reaper (Hell Fire) 38181</h3>
+                    <p class="price">449,000₫</p>
+                     <button type="submit" class="btn btn-cart" value="add">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="product">
+                <img class="img-prd" src="images/s5-6 Bastion.webp" alt="anh"/>
+                <hr color="red" size="1px" width="100%">
+                <div class="info">
+                    <h3 class="content-product-h3">Pop Games: Overwatch S5 - Reaper (Hell Fire) 38181</h3>
+                    <p class="price">449,000₫</p>
+                    <button type="submit" class="btn btn-cart" value="add">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="product">
+                <img class="img-prd" src="images/S5-Pharah.webp" alt="anh"/>
+                <hr color="red" size="1px" width="100%">
+                <div class="info">
+                    <h3 class="content-product-h3">Pop Games: Overwatch S5 - Reaper (Hell Fire) 38181</h3>
+                    <p>449,000₫</p>
+                    <button type="submit" class="btn btn-cart" value="Add">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="product">
+                <img class="img-prd" src="images/batman.webp" alt="anh"/>
+                <hr color="red" size="1px" width="100%">
+                <div class="info">
+                    <h3 class="content-product-h3">Pop Games: Overwatch S5 - Reaper (Hell Fire) 38181</h3>
+                    <p>449,000₫</p>
+                    <button type="submit" class="btn btn-cart" value="Add">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div> 
+
+            <div class="click">
+                <button type="submit" value="xem them"><a href="indexfun.html">Xem thêm</a></button>
+            </div>
+    </section>
+    <!--section 2-->
+    <section>
+        <div class="content hottoy1" >
+            <h1>HOTTOYS </h1>
+            <p>Dòng sản phẩm cao cấp và chi tiết đến từ thương hiệu Hot Toys</p>
+        </div>
+        <div class="products hottoy2">
+            <div class="product" >
+                <img src="images/ht1.jpg" alt="anh"/>
+                <hr color="red" size="1px" width="100%">
+                <div class="info hottoy1" >
+                    <h3>MMS499D26- 1/6th scale War Machine Mark IV </h3>
+                    <p>9.520,000₫</p>
+                     <button type="submit" value="Add">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/ht2.jpg" alt="anh"/>
+                <hr color="red" size="1px" width="100%">
+                <div class="info hottoy1">
+                    <h3>MMS496- 1/6th scale Count Dooku</h3>
+                    <p>8,730,000₫</p>
+                    <button type="submit" value="Add">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/ht3.jpg" alt="anh"/>
+                <hr color="red" size="1px" width="100%">
+                <div class="info hottoy1">
+                    <h3> MMS470-1/6 scale Black Panther version only </h3>
+                    <p>11,580,000₫</p>
+                    <button type="submit" value="Add">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/ht4.jpg" alt="anh"/>
+                <hr color="red" size="1px" width="100%">
+                <div class="info hottoy1">
+                    <h3>ACS004 - 1/6th scale Iron Man Mark L </h3>
+                    <p>15,430,000₫</p>
+                    <button type="submit" value="Add">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div> 
+            <div class="click hottoy1">
+                <button type="submit" value="xem them"><a href="indexhot.html">Xem thêm</a></button>
+            </div>
+        </section>
+        <!--section3-->
+        <section>
+            <div class="content" > 
+                <h1>COSBABY </h1>
+                <p>Những nhân vật siêu anh hùng, truyện tranh và phim ảnh được làm với phong cách cực kỳ dễ thương của thương hiệu Hot toys</p>
+            </div>
+            <div class="products ">
+                <div class="product">
+                    <img src="images/1.png" alt="anh"/>
+                    <hr color="red" size="1px" width="100%">
+                    <div class="info">
+                        <h3>Cosbaby (S) - COSB 370 - Ghost rider:</h3>
+                        <p>449,000₫</p>
+                         <button type="submit" value="Add">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/captain_cos_main.jpg" alt="anh"/>
+                    <hr color="red" size="1px" width="100%">
+                    <div class="info">
+                        <h3>Cosbaby (S) - COSB 417 - Captain American</h3>
+                        <p>449,000₫</p>
+                        <button type="submit" value="Add">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/8.jpg" alt="anh"/>
+                    <hr color="red" size="1px" width="100%">
+                    <div class="info">
+                        <h3>Cosbaby (S) - COSB 510 - Doctor Strange</h3>
+                        <p>449,000₫</p>
+                        <button type="submit" value="Add">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/9.jpg" alt="anh"/>
+                    <hr color="red" size="1px" width="100%">
+                    <div class="info">
+                        <h3>Cosbaby (S) - COSB 465 - LoKi From Avenger S3 </h3>
+                        <p>449,000₫</p>
+                        <button type="submit" value="Add">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div> 
+    
+                <div class="click">
+                    <button type="submit" value="xem them"><a href="indexcos.HTML">Xem thêm</a></button>
+                </div>
+        </section>
+        <section class="vd">
+            <h1>Video chủ đề của tháng</h1>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lrHwxwB7_Fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+
+            </div>
+           
+      
+        </section>
+        <footer>
+            <div class="ft25">
+                <h3 class="title-footer">KHÁCH HÀNG</h3>
+                <span class="line-footer"></span>
+                <ul class="content-footer-ft25">
+                                            
+                    <li><a href="indexlh.html">Liên Hệ</a></li>							
+                                            
+                    <li><a href="indexdoitac.html">Đối Tác</a></li>							
+                                            
+                    <li><a href="indexcsbh.html">Chính sách đổi trả hàng hóa</a></li>							
+                                            
+                    <li><a href="indexcsgn.html">Chính sách giao nhận</a></li>							
+                                            
+                    <li><a href="indexhdtt.html">Hướng dẫn thanh toán</a></li>							
+                                            
+                    <li><a href="indexcsbm.html">Chính sách bảo mật</a></li>							
+                    
+                </ul>
+            </div>
+            <div class="ft25">
+                <h3 class="title-footer">LINK TÌM KIẾM SP</h3>
+                <span class="line-footer"></span>
+                <ul class="content-footer-ft25">
+                                            
+                    <li><a href="indexhot.html">Hot Toys</a></li>
+                    <li><a href="indexfun.html">Funko</a></li>
+                    <li><a href="indexhero.html">Herocross</a></li>
+                    <li><a href="indexbeast.html">Beast Kingdom</a></li>
+                    <li><a href="indexdevil.html">Devil Toys</a></li>
+                    <li><a href="indexcos.HTML">XM Studio</a></li>
+                    <li><a href="indexcos.HTML">Royal Selangor</a></li>						
+                    
+                </ul>
+            </div>
+            <div class="ft25">
+                <h3 class="title-footer">Giới thiệu</h3>
+                <span class="line-footer"></span>
+                <ul>
+                    <li class="footer-cty"><span>Bản quyền Website TOYS-KINGDOM thuộc quyền sở hữu của Cty G.P Company Limited & Cafemohinh</span></li>		
+                    <li>Email: <span>toyskingdom@gmail.com</span></li>			
+                    <li>Hotline: <span>0905.96.90.96 – 028.351.44662</span></li>
+                        
+                    <li>
+                        <p class="text-footer-list" >
+                           371 Nguyễn Kiệm P3 Q.Gò Vấp Tp.HCM</br>
+    Mã số doanh nghiệp: 0301916131</br>
+    Đăng ký ngày 01 tháng 2 năm 2000 
+    </br>Tại phòng ĐKKD - Sở KH&ĐT TP.HCM.</br>
+    Website: www.toys-kingdom.vn – www.toys-kingdom.com.vn</br>
+    <p><a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=34553"><img src="//file.hstatic.net/1000222426/file/20150827110756-dathongbao-750x285.png" width="189" height="71" /></a></p> </br></br>
+                        </p>
+                    </li>	
+                    
+                </ul>
+            </div>
+            </div>
+            
+            <div class="bottom-footer">
+                <span class="line-footer "></span>
+                <p>© 2020-TOYSKINGDOM</p>
+                <p>Quách Tuấn Hiền-Lư Quốc Thắng</p>
+    
+            </div>
+
+        </footer>
+   
+</body>
+
+</html>

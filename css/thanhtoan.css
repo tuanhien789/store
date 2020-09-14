@@ -1,0 +1,93 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, black 75%, black) 0 0,linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,linear-gradient(45deg, black 17%, transparent 17%, transparent 25%, black 25%, black 36%, transparent 36%, transparent 64%, black 64%, black 75%, transparent 75%, transparent 83%, black 83%) 1em 1em;background-color: white;background-size: 2em 2em;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    
+   
+   
+}
+h1{
+    padding-top:20px;
+    font-size:20px;
+    color:red;
+    text-shadow:2px 3px whitesmoke;
+    font-weight: bold;
+    padding-left:15px;
+}
+section{
+    
+    width:50%;
+    height:auto;
+    background-color:white;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:5px dashed green;
+}
+ul.nav-menu{
+    display:flex;
+    padding:10px 15px;
+    margin:0;
+    list-style-type: none;
+}
+.nav-menu>li{
+    min-width: 90px;
+}
+.nav-menu>li:last-child{
+    margin-left:0px;
+}
+.nav-menu>li>a{
+    font-size:19px;
+    padding:10px 15px;
+    display:block;
+    color:whitesmoke;
+}
+div{
+    margin-top:10px;
+    width:100%;
+    padding:10px 15px;
+}
+.name>input{
+    width:100%;
+    padding:15px;
+}
+div.contact{
+    width:100%;
+    padding:10px;
+    display:flex;
+}
+div.contact>input[type="text"]{
+    width:50%;
+    margin:5px;
+    padding:15px;
+}
+#sdt{
+    width:100%;
+    
+}
+
+div.address{
+    width:100%;
+    padding:15px;
+}
+div.address>input{
+    width:100%;
+    padding:15px;
+}
+div.seclect{
+    margin-left:3%;
+
+}
+.bottom{
+    text-align: center;
+    padding-right:30px;
+    background-color:green;
+    height:30px;
+    color:white;
+}
+
